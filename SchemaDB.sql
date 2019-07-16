@@ -52,7 +52,7 @@ CREATE TABLE iam_provisiondata
  IamObjectID varchar(255),
  IamTargetSystem varchar(255),
  IamWorkflow varchar(255),
- IamAddedBy varchar(255)
+ IamAddedBy varchar(255),
  IamTime date
 );
 CREATE TABLE iam_targetsystems
@@ -60,19 +60,19 @@ CREATE TABLE iam_targetsystems
  IamTargetSystemID varchar(255),
  IamTargtSystemName  varchar(255),
  IamTargetSystemInactive varchar(255),
- IamTargetSystemDescription varchar(255),
+ IamTargetSystemDescription varchar(255)
 );
 CREATE TABLE iam_workflow
 (  
  IamWorkflowID int,
  IamParentID int,
- IamContent LONGBLOB, 
+ IamContent LONGBLOB
 );
 CREATE TABLE iam_jobs
 (  
  IamJobID varchar(255),
- IamParentID int,,
- IamContent LONGBLOB, 
+ IamParentID int,
+ IamContent LONGBLOB
 );
 CREATE TABLE iam_structure
 (  
